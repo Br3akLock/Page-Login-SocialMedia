@@ -1,5 +1,4 @@
-# Pagina de Login (Rede Social)
-# Clone de uma pagina de login
+# Clone de uma pagina de login (Rede Social)
  
 Original:
 <br>

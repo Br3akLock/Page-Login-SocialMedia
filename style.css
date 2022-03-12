@@ -22,7 +22,6 @@ main {
     height: 450px;
     background-color: white;
     border-radius: 15px;
-    
 }
 .logar {
     font-size: 2em;
@@ -32,9 +31,12 @@ main {
 .logar::before {
     content: '';
     position: absolute;
+    top: 153px;
+    /*
     top: 175px;
     left: 980px;
     transform: translate(-475px, -20px);
+    */
     width: 35px;
     height: 4px;
     background-color: #5D0B1E;
@@ -134,3 +136,64 @@ a {
     text-decoration: none;
     color: white;
 }
+/* Dispositivos extra pequenos (telefones, 600px e inferior) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: blue;
+    }
+    .logar::before {
+        top: 168px;
+    }
+}
+
+/* Dispositivos pequenos (tablets de retrato e telefones grandes, 600px e superior) */
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+    .logar::before {
+        top: 168px;
+    }
+}
+
+/* Dispositivos médios (tablets de paisagem, 768px e superior) */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: green;
+    }
+    .logar::before {
+        top: 168px;
+    }
+}
+
+/* Dispositivos grandes (laptops/desktops, 992px e superior) */
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: lightgray;
+    }
+    .logar::before {
+        top: 168px;
+    }
+}
+/* Dispositivos extragrandes (laptops e desktops grandes, 1200px e superior) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: magenta;
+    }
+    .logar::before {
+        top: 153px;
+    }
+}
+
+/*
+
+
+    top: 153px;
+
+@media screen and (min-width: 780px) {
+    .logar::before {
+        margin: auto;
+        width: 90%;
+    }
+}
+*/

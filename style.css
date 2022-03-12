@@ -184,16 +184,3 @@ a {
         top: 153px;
     }
 }
-
-/*
-
-
-    top: 153px;
-
-@media screen and (min-width: 780px) {
-    .logar::before {
-        margin: auto;
-        width: 90%;
-    }
-}
-*/
